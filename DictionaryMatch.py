@@ -3,7 +3,7 @@ import sys
 
 
 def osa_distance(word1, word2, mem):
-    '''  Returns OSA distance using insert, delete, substitute, and transpose'''
+    '''  Returns OSA distance using insert, delete, substitute, and transpose '''
     
     matrix = [[0 for i in range(0, len(word2) + 1)] for j in range(0, len(word1) + 1)]
     
@@ -26,7 +26,7 @@ def osa_distance(word1, word2, mem):
     return matrix[-1][-1]
 
 def lev_distance(word1, word2, mem):
-    '''  Returns Levenshtein distance using insert, delete, and substitute'''
+    '''  Returns Levenshtein distance using insert, delete, and substitute '''
     
     matrix = [[0 for i in range(0, len(word2) + 1)] for j in range(0, len(word1) + 1)]
 
@@ -46,7 +46,7 @@ def lev_distance(word1, word2, mem):
     return matrix[-1][-1]
 
 def get_dictionary_match(word, dictionary, mem, mode):
-    ''' Returns matched word and distance, with method dependent on mode'''
+    ''' Returns matched word and distance, with method dependent on mode '''
     
     best_match = ""
     best_dist = -1
